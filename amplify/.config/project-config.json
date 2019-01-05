@@ -1,0 +1,17 @@
+{
+    "projectName": "expoamplify",
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/",
+            "DistributionDir": "/",
+            "BuildCommand": "expo build:android",
+            "StartCommand": "expo start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ],
+    "frontend": "javascript",
+    "version": "1.0"
+}
