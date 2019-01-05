@@ -81,8 +81,26 @@
 		"authcognito11e3ed3b": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/expoamplify-20181210233210-deployment/amplify-cfn-templates/auth/cognito11e3ed3b-cloudformation-template.yml",
+				"TemplateURL": "https://s3.amazonaws.com/expoamplify-20190105140700-deployment/amplify-cfn-templates/auth/cognito11e3ed3b-cloudformation-template.yml",
 				"Parameters": {
+					"authRoleName": {
+						"Ref": "AuthRoleName"
+					},
+					"unauthRoleName": {
+						"Ref": "UnauthRoleName"
+					},
+					"authRoleArn": {
+						"Fn::GetAtt": [
+							"AuthRole",
+							"Arn"
+						]
+					},
+					"unauthRoleArn": {
+						"Fn::GetAtt": [
+							"UnauthRole",
+							"Arn"
+						]
+					},
 					"identityPoolName": "cognito11e3ed3b_identitypool_11e3ed3b",
 					"allowUnauthenticatedIdentities": false,
 					"thirdPartyAuth": false,
@@ -120,11 +138,10 @@
 					"userpoolClientSetAttributes": false,
 					"useDefault": "default",
 					"unAuthRoleName": "expoamplify-20181210233210-unauthRole",
-					"authRoleName": "expoamplify-20181210233210-authRole",
 					"unAuthRoleArn": "arn:aws:iam::046804861274:role/expoamplify-20181210233210-unauthRole",
-					"authRoleArn": "arn:aws:iam::046804861274:role/expoamplify-20181210233210-authRole",
 					"resourceName": "cognito11e3ed3b",
-					"authSelections": "identityPoolAndUserPool"
+					"authSelections": "identityPoolAndUserPool",
+					"env": "devo"
 				}
 			}
 		}
