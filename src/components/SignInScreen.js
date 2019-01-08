@@ -10,7 +10,7 @@ import t from 'tcomb-form-native';
 const Form = t.form.Form;
 
 import Amplify, { Auth } from 'aws-amplify';
-import aws_exports from './../aws-exports';
+import aws_exports from './../../aws-exports';
 
 Amplify.configure(aws_exports);
 

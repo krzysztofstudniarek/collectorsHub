@@ -1,9 +1,9 @@
 import React from 'react';
-import CollectionsScreen from '../components/CollectionsScreen';
+import SignInScreen from '../src/components/SignInScreen';
 
 import renderer from 'react-test-renderer';
 
 test('renders correctly', () => {
-  const tree = renderer.create(<CollectionsScreen />).toJSON();
+  const tree = renderer.create(<SignInScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

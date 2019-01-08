@@ -13,11 +13,11 @@ import {
   createAppContainer
 } from 'react-navigation';
 
-import AuthLoadingScreen from './components/AuthLoadingScreen'
-import HomeScreen from './components/HomeScreen'
-import CollectionsScreen from './components/CollectionsScreen'
-import NewCollectionScreen from './components/NewCollectionScreen'
-import SignInScreen from './components/SignInScreen'
+import AuthLoadingScreen from './src/components/AuthLoadingScreen'
+import HomeScreen from './src/components/HomeScreen'
+import CollectionsScreen from './src/components/CollectionsScreen'
+import NewCollectionScreen from './src/components/NewCollectionScreen'
+import SignInScreen from './src/components/SignInScreen'
 
 const AppStack = createStackNavigator(
   { 

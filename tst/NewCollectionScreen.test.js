@@ -1,5 +1,5 @@
 import React from 'react';
-import NewCollectionScreen from '../components/NewCollectionScreen';
+import NewCollectionScreen from '../src/components/NewCollectionScreen';
 
 import renderer from 'react-test-renderer';
 
