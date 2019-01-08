@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "collectorsHub",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognito11e3ed3b",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://expoamplify-20190105140700-deployment/amplify-appsync-files/schema.graphql.1546778205669",
+    "ResolverBucket": "expoamplify-20190105140700-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1546778205669"
+}

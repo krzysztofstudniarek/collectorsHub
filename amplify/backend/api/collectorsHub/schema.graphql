@@ -1,0 +1,11 @@
+type Collection @model {
+  id: ID!
+  name: String!
+  type: String!
+  artifacts: [Artifact!]!
+}
+
+type Artifact @model {
+  id: ID!
+  name: String!
+}
